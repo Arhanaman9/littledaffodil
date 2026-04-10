@@ -1,59 +1,24 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-.admin-bar { background: #34495e; color: white; padding: 6px; font-size: 0.75rem; text-align: center; }
-
-.header { display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 4px solid #00c2e0; }
-.logo-area { display: flex; align-items: center; }
-.logo { width: 70px; height: 70px; border-radius: 50%; border: 2px solid #00c2e0; margin-right: 12px; }
-.school-name h1 { color: #0056b3; font-size: 1.4rem; }
-.school-name p { font-size: 0.7rem; font-weight: bold; color: #444; }
-.slogan { color: #d9534f; font-style: italic; font-size: 0.85rem; }
-.leadership-header-names { text-align: right; font-size: 0.75rem; color: #555; border-left: 1px solid #ddd; padding-left: 10px; }
-
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; text-decoration: none; scroll-behavior: smooth; }
+.admin-bar { background: #34495e; color: #fff; text-align: center; padding: 5px; font-size: 0.8rem; }
+.header { display: flex; align-items: center; padding: 15px; border-bottom: 3px solid #00c2e0; }
+.logo { width: 60px; height: 60px; border-radius: 50%; margin-right: 15px; }
+.school-name h1 { color: #0056b3; font-size: 1.2rem; }
+.slogan { color: #d9534f; font-style: italic; font-size: 0.8rem; }
 .news-ticker { display: flex; background: #fff9e6; align-items: center; border-bottom: 1px solid #ddd; }
-.ticker-label { background: #ffcc00; padding: 6px 15px; font-weight: bold; font-size: 0.8rem; }
-marquee { padding: 6px; font-size: 0.9rem; font-weight: 500; }
-
+.ticker-label { background: #ffcc00; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; }
 .main-nav ul { list-style: none; }
-.main-nav li { padding: 15px 20px; border-bottom: 1px solid #f9f9f9; font-weight: bold; cursor: pointer; display: flex; align-items: center; }
-.icon { width: 35px; height: 35px; border-radius: 50%; color: white; display: flex; justify-content: center; align-items: center; margin-right: 15px; }
-.home { background: #f0ad4e; } .about { background: #9cdb6c; } .academics { background: #5bc0de; } .admission { background: #e91e63; } .contact { background: #607d8b; }
-.arrow { margin-left: auto; color: #bbb; transition: 0.3s; }
-.submenu { display: none; background: #fcfcfc; padding-left: 50px; width: 100%; }
-.submenu li { font-weight: normal; font-size: 0.9rem; padding: 10px 0; border: none; }
-.show { display: block; }
-
-.main-banner img { width: 100%; display: block; }
-
-.stats-bar { display: grid; grid-template-columns: repeat(2, 1fr); background: #34495e; color: white; padding: 20px; gap: 15px; text-align: center; }
-.stat-item i { font-size: 1.5rem; color: #ffcc00; margin-bottom: 5px; display: block; }
-
-.leadership-section { padding: 40px 20px; background: #fff; }
-.section-header { text-align: center; margin-bottom: 30px; }
-.section-header h2 { color: #0056b3; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px; }
-
-.leader-card { display: flex; align-items: center; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-.leader-card.reverse { flex-direction: row-reverse; text-align: right; background: #fff9e6; }
-.leader-card img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #00c2e0; object-fit: cover; }
-.leader-text h3 { color: #0056b3; font-size: 1.1rem; }
-.role { color: #d9534f; font-weight: bold; font-size: 0.9rem; margin-bottom: 8px; }
-.leader-text p { font-size: 0.9rem; line-height: 1.5; color: #555; font-style: italic; }
-
-.gallery-section { padding: 40px 20px; }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-.gallery-item { border-radius: 10px; overflow: hidden; border: 1px solid #ddd; text-align: center; }
-.gallery-item img { width: 100%; height: 180px; object-fit: cover; }
-.gallery-item p { padding: 10px; font-weight: bold; background: #f4f4f4; color: #333; }
-
-.school-footer { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 20px; text-align: left; }
-.yt-btn { display: inline-block; background: #ff0000; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-.footer-bottom { border-top: 1px solid #444; padding-top: 20px; font-size: 0.8rem; color: #aaa; text-align: center; }
-
-@media (max-width: 768px) {
-    .header { flex-direction: column; text-align: center; gap: 10px; }
-    .leadership-header-names { border-left: none; border-top: 1px solid #ddd; padding: 10px 0; }
-    .leader-card { flex-direction: column; text-align: center; }
-    .leader-card.reverse { flex-direction: column; text-align: center; }
-    .stats-bar { grid-template-columns: repeat(2, 1fr); }
-}
+.main-nav li { border-bottom: 1px solid #eee; }
+.main-nav a { display: flex; align-items: center; padding: 12px 20px; color: #333; font-weight: bold; }
+.icon { width: 30px; height: 30px; border-radius: 50%; color: #fff; display: flex; justify-content: center; align-items: center; margin-right: 10px; }
+.home { background: #f0ad4e; } .about { background: #9cdb6c; } .academics { background: #5bc0de; } .contact { background: #607d8b; }
+.main-banner img { width: 100%; height: auto; }
+.leadership-section, .gallery-section { padding: 30px 20px; text-align: center; }
+.leader-card { display: flex; align-items: center; gap: 15px; background: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: left; }
+.leader-card.reverse { flex-direction: row-reverse; text-align: right; }
+.leader-card img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #00c2e0; object-fit: cover; }
+.role { color: #d9534f; font-weight: bold; font-size: 0.85rem; }
+.gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.gallery-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 5px; }
+.school-footer { background: #2c3e50; color: #fff; padding: 30px 20px; text-align: center; }
+.footer-grid { display: flex; flex-direction: column; gap: 20px; text-align: center; margin-bottom: 20px; }
+.yt-link { color: #ff4444; font-weight: bold; font-size: 1.1rem; }
